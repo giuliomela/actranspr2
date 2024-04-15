@@ -1,0 +1,541 @@
+measure_id;measure_name;location_id;location_name;sex_id;sex_name;age_id;age_name;cause_id;cause_name;rei_id;rei_name;metric_id;metric_name;year;val;upper;lower
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;252;Dislocation of hip;2;Percent;2019;0.004455437;0.010253937;0.001713981
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;252;Dislocation of hip;3;Rate;2019;0.742555963;1.674626776;0.267492701
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;253;Dislocation of knee;2;Percent;2019;0.005002917;0.011276591;0.001811503
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;253;Dislocation of knee;3;Rate;2019;0.835536804;1.95026635;0.288651704
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;254;Dislocation of shoulder;2;Percent;2019;0.008602319;0.016177189;0.003896364
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;254;Dislocation of shoulder;3;Rate;2019;1.435797345;2.781952832;0.624767471
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;255;Muscle and tendon injuries, including sprains and strains lesser dislocations;2;Percent;2019;0.071980406;0.107789097;0.045413584
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;255;Muscle and tendon injuries, including sprains and strains lesser dislocations;3;Rate;2019;12.04204665;18.9782223;6.913519461
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;256;Fracture of clavicle, scapula, or humerus;2;Percent;2019;0.048065885;0.072271766;0.030191863
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;256;Fracture of clavicle, scapula, or humerus;3;Rate;2019;8.023639593;12.50648955;4.730649664
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;257;Fracture of face bones;2;Percent;2019;0.029349886;0.047017051;0.016947779
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;257;Fracture of face bones;3;Rate;2019;4.899999305;8.123745001;2.602326254
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;258;Fracture of foot bones except ankle;2;Percent;2019;0.018298028;0.033437388;0.009075397
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;258;Fracture of foot bones except ankle;3;Rate;2019;3.049314759;5.763089451;1.451891064
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;259;Fracture of hand (wrist and other distal part of hand);2;Percent;2019;0.03207424;0.052026901;0.018994509
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;259;Fracture of hand (wrist and other distal part of hand);3;Rate;2019;5.341783017;8.964103736;2.98906437
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;260;Fracture of hip;2;Percent;2019;0.028031513;0.04734366;0.015276625
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;260;Fracture of hip;3;Rate;2019;4.659876469;7.852386024;2.440081403
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;261;Amputation of upper limbs, bilateral;2;Percent;2019;0.000344383;0.00083695;0.00010369
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;261;Amputation of upper limbs, bilateral;3;Rate;2019;0.057290247;0.134868937;0.01684048
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;262;Fracture of patella, tibia or fibula, or ankle;2;Percent;2019;0.088555317;0.128509386;0.059242602
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;262;Fracture of patella, tibia or fibula, or ankle;3;Rate;2019;14.79780323;22.81340158;9.461460777
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;263;Fracture of pelvis;2;Percent;2019;0.008996298;0.017388516;0.004215004
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;263;Fracture of pelvis;3;Rate;2019;1.50274814;3.06693623;0.655122795
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;264;Fracture of radius and/or ulna;2;Percent;2019;0.072827513;0.104199591;0.047715728
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;264;Fracture of radius and/or ulna;3;Rate;2019;12.1558248;18.59897582;7.564293102
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;265;Fracture of skull;2;Percent;2019;0.01636221;0.028405184;0.008560399
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;265;Fracture of skull;3;Rate;2019;2.733362177;4.867508787;1.37901756
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;266;Fracture of sternum and/or fracture of one or more ribs;2;Percent;2019;0.004186566;0.00925676;0.001556375
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;266;Fracture of sternum and/or fracture of one or more ribs;3;Rate;2019;0.697412259;1.622039443;0.252678133
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;267;Fracture of vertebral column;2;Percent;2019;0.01254796;0.023594452;0.005865137
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;267;Fracture of vertebral column;3;Rate;2019;2.096985956;4.038920065;0.974434828
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;268;Fracture of femur, other than femoral neck;2;Percent;2019;0.039145737;0.066402803;0.02205402
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;268;Fracture of femur, other than femoral neck;3;Rate;2019;6.537049781;11.11641724;3.574414462
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;269;Minor TBI;2;Percent;2019;0.041516127;0.062145698;0.025146577
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;269;Minor TBI;3;Rate;2019;6.924200415;11.00176892;4.0132059
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;270;Moderate/Severe TBI;2;Percent;2019;0.059665073;0.073298013;0.047429733
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;270;Moderate/Severe TBI;3;Rate;2019;9.948127271;13.26195903;7.239906035
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;275;Foreign body in GI and urogenital system;2;Percent;2019;0.001467561;0.003358128;0.000531355
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;275;Foreign body in GI and urogenital system;3;Rate;2019;0.155586259;0.363376172;0.056246689
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;276;Spinal cord lesion at neck level;2;Percent;2019;0.001196573;0.002398528;0.000520986
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;276;Spinal cord lesion at neck level;3;Rate;2019;0.126721752;0.266480898;0.053292619
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;277;Spinal cord lesion below neck level;2;Percent;2019;0.000738653;0.001538903;0.000275527
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;277;Spinal cord lesion below neck level;3;Rate;2019;0.078357726;0.174247289;0.027967814
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;278;Drowning and nonfatal submersion;2;Percent;2019;0.001127074;0.002657447;0.000404065
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;278;Drowning and nonfatal submersion;3;Rate;2019;0.118980161;0.290895095;0.042743595
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;279;Asphyxiation;2;Percent;2019;0.00187452;0.004310493;0.00066881
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;279;Asphyxiation;3;Rate;2019;0.19853276;0.468372504;0.066940223
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;280;Crush injury;2;Percent;2019;0.003744236;0.006595264;0.001733915
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;280;Crush injury;3;Rate;2019;0.397005057;0.72631256;0.176052609
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;281;Nerve injury;2;Percent;2019;0.002750271;0.006011441;0.001160659
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;281;Nerve injury;3;Rate;2019;0.29162768;0.659209577;0.119526058
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;282;Injury to eyes;2;Percent;2019;0.004187684;0.008582433;0.001854085
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;282;Injury to eyes;3;Rate;2019;0.443363044;0.937402736;0.19663165
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;283;Amputation of lower limb, unilateral;2;Percent;2019;0.00859016;0.01404166;0.004684771
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;283;Amputation of lower limb, unilateral;3;Rate;2019;0.907706574;1.550135369;0.480648589
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;284;Open wound(s);2;Percent;2019;0.159625609;0.221812081;0.113217472
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;284;Open wound(s);3;Rate;2019;16.95147064;25.368814;10.97483101
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;285;Poisoning requiring urgent care;2;Percent;2019;0.005373562;0.010818193;0.002473552
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;285;Poisoning requiring urgent care;3;Rate;2019;0.569017192;1.153397954;0.248585338
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;286;Severe chest Injury;2;Percent;2019;0.011262892;0.020202234;0.006111149
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;286;Severe chest Injury;3;Rate;2019;1.192041088;2.190010718;0.6364383
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;287;Internal hemorrhage in abdomen and pelvis;2;Percent;2019;0.023020959;0.035831314;0.013981991
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;287;Internal hemorrhage in abdomen and pelvis;3;Rate;2019;2.435068629;3.922536559;1.41667512
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;288;Contusion in any part of the body;2;Percent;2019;0.020452569;0.038962301;0.008340712
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;288;Contusion in any part of the body;3;Rate;2019;2.177521885;4.513053684;0.875258843
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;289;Effect of different environmental factors;2;Percent;2019;0.002656592;0.005987361;0.000946967
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;289;Effect of different environmental factors;3;Rate;2019;0.280521426;0.6420587;0.098969793
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;290;Complications following therapeutic procedures;2;Percent;2019;0.01956018;0.033785317;0.010365913
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;290;Complications following therapeutic procedures;3;Rate;2019;2.071848123;3.656330097;1.059832748
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;291;Superficial injury of any part of the body;2;Percent;2019;0.041549883;0.067325649;0.022383423
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;291;Superficial injury of any part of the body;3;Rate;2019;4.401243026;7.669481021;2.265430314
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;292;Multiple fractures, dislocations, crashes, wounds, pains, and strains;2;Percent;2019;0.025105811;0.039227689;0.014534665
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;292;Multiple fractures, dislocations, crashes, wounds, pains, and strains;3;Rate;2019;2.657532653;4.485062297;1.477063328
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;293;Amputation of upper limb, unilateral;2;Percent;2019;0.00075304;0.001670444;0.000275911
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;293;Amputation of upper limb, unilateral;3;Rate;2019;0.079588147;0.183360069;0.027352035
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;297;Burns, >=20% total burned surface area or >= 10% burned surface area if head/neck or hands/wrist involved w/o lower airway burns;2;Percent;2019;0.002182459;0.004107441;0.00110843
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;297;Burns, >=20% total burned surface area or >= 10% burned surface area if head/neck or hands/wrist involved w/o lower airway burns;3;Rate;2019;0.426348197;0.793410447;0.203015379
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;298;Amputations;2;Percent;2019;0.012681012;0.01912786;0.008014023
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;298;Amputations;3;Rate;2019;2.48000988;3.934732663;1.503528663
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;299;Burns;2;Percent;2019;0.009591509;0.016709422;0.005397846
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;299;Burns;3;Rate;2019;1.875067108;3.304337213;1.006429298
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;300;Fractures;2;Percent;2019;0.344340423;0.394281759;0.298255075
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;300;Fractures;3;Rate;2019;67.27692217;85.35169343;51.86408186
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;301;Head Injuries;2;Percent;2019;0.131962665;0.158070744;0.107520711
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;301;Head Injuries;3;Rate;2019;25.7709774;33.2958648;19.18542624
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;302;Spinal Injuries;2;Percent;2019;0.002115869;0.00362012;0.001098059
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;302;Spinal Injuries;3;Rate;2019;0.413344092;0.725163482;0.208592243
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;303;Minor Injuries;2;Percent;2019;0.336757385;0.396213856;0.281683033
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;303;Minor Injuries;3;Rate;2019;65.98987344;87.60264653;47.48032804
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;288;Contusion in any part of the body;2;Percent;2019;0.027588806;0.053653182;0.012150983
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;288;Contusion in any part of the body;3;Rate;2019;1.630365679;3.295774436;0.695634939
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;289;Effect of different environmental factors;2;Percent;2019;0.00234327;0.005883358;0.000749498
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;289;Effect of different environmental factors;3;Rate;2019;0.138583879;0.364710449;0.043230459
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;290;Complications following therapeutic procedures;2;Percent;2019;0.047239825;0.077485215;0.027094685
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;290;Complications following therapeutic procedures;3;Rate;2019;2.787460746;4.74059469;1.499249258
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;291;Superficial injury of any part of the body;2;Percent;2019;0.038867122;0.065874518;0.020243162
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;291;Superficial injury of any part of the body;3;Rate;2019;2.295742912;4.1481592;1.120347953
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;292;Multiple fractures, dislocations, crashes, wounds, pains, and strains;2;Percent;2019;0.020372206;0.033709174;0.011340567
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;292;Multiple fractures, dislocations, crashes, wounds, pains, and strains;3;Rate;2019;1.198993183;2.066908192;0.621278009
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;293;Amputation of upper limb, unilateral;2;Percent;2019;0.000764211;0.001753012;0.00024946
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;293;Amputation of upper limb, unilateral;3;Rate;2019;0.04483425;0.11000094;0.014715106
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;294;Amputation of thumb;2;Percent;2019;0.001414926;0.003678849;0.000444211
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;294;Amputation of thumb;3;Rate;2019;0.083704533;0.218815354;0.023373782
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;295;Amputation of toe/toes;2;Percent;2019;0.001952986;0.005098058;0.000621353
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;295;Amputation of toe/toes;3;Rate;2019;0.115261241;0.324091435;0.035682134
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;296;Burns, <20% total burned surface area without lower airway burns;2;Percent;2019;0.012357204;0.023421966;0.005849568
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;296;Burns, <20% total burned surface area without lower airway burns;3;Rate;2019;0.728133569;1.455732018;0.332893293
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;297;Burns, >=20% total burned surface area or >= 10% burned surface area if head/neck or hands/wrist involved w/o lower airway burns;2;Percent;2019;0.006611633;0.011618818;0.003416465
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;297;Burns, >=20% total burned surface area or >= 10% burned surface area if head/neck or hands/wrist involved w/o lower airway burns;3;Rate;2019;0.388383319;0.702720084;0.191733826
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;298;Amputations;2;Percent;2019;0.031155303;0.047575889;0.020061372
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;298;Amputations;3;Rate;2019;1.829473201;2.824293945;1.116592297
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;299;Burns;2;Percent;2019;0.019186681;0.031682134;0.011297696
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;299;Burns;3;Rate;2019;1.12931026;2.005701488;0.648079804
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;300;Fractures;2;Percent;2019;0.371743364;0.423897607;0.322620288
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;300;Fractures;3;Rate;2019;21.89076245;28.39030785;16.73965327
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;301;Head Injuries;2;Percent;2019;0.13403444;0.162612723;0.107718535
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;301;Head Injuries;3;Rate;2019;7.880339634;10.30317304;5.795146116
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;304;Other Injuries;2;Percent;2019;0.162551136;0.197037746;0.131002184
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;304;Other Injuries;3;Rate;2019;31.76104932;42.12352419;23.32664669
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;250;Amputation of lower limbs, bilateral;2;Percent;2019;0.000195039;0.000492245;5.60E-05
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;250;Amputation of lower limbs, bilateral;3;Rate;2019;0.010999872;0.028730028;0.002808194
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;251;Lower airway burns;2;Percent;2019;0;0;0
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;251;Lower airway burns;3;Rate;2019;0;0;0
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;252;Dislocation of hip;2;Percent;2019;0.006793303;0.017213795;0.001847548
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;252;Dislocation of hip;3;Rate;2019;0.382660791;1.006695282;0.098463182
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;253;Dislocation of knee;2;Percent;2019;0.005771691;0.015831656;0.001362586
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;253;Dislocation of knee;3;Rate;2019;0.325780245;0.875015372;0.070209064
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;254;Dislocation of shoulder;2;Percent;2019;0.010864675;0.025906082;0.00368115
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;254;Dislocation of shoulder;3;Rate;2019;0.61390679;1.541136555;0.192221359
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;255;Muscle and tendon injuries, including sprains and strains lesser dislocations;2;Percent;2019;0.068079947;0.118705114;0.032685007
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;255;Muscle and tendon injuries, including sprains and strains lesser dislocations;3;Rate;2019;3.850234959;7.191296825;1.643705896
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;256;Fracture of clavicle, scapula, or humerus;2;Percent;2019;0.065852742;0.111718336;0.035012166
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;256;Fracture of clavicle, scapula, or humerus;3;Rate;2019;3.703733634;6.761574814;1.811140096
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;257;Fracture of face bones;2;Percent;2019;0.014452712;0.031267233;0.005503214
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;257;Fracture of face bones;3;Rate;2019;0.811147549;1.780191519;0.2837149
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;258;Fracture of foot bones except ankle;2;Percent;2019;0.017283558;0.038135686;0.006274204
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;258;Fracture of foot bones except ankle;3;Rate;2019;0.973702968;2.25330461;0.328802936
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;259;Fracture of hand (wrist and other distal part of hand);2;Percent;2019;0.023475102;0.047709391;0.009859049
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;259;Fracture of hand (wrist and other distal part of hand);3;Rate;2019;1.322861192;2.820192563;0.521381171
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;260;Fracture of hip;2;Percent;2019;0.037440759;0.078494093;0.015299703
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;260;Fracture of hip;3;Rate;2019;2.08906285;4.470918168;0.833879597
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;302;Spinal Injuries;2;Percent;2019;0.001237249;0.002287007;0.00062037
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;302;Spinal Injuries;3;Rate;2019;0.0728333;0.134159925;0.035766311
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;303;Minor Injuries;2;Percent;2019;0.274054262;0.331747916;0.21453601
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;303;Minor Injuries;3;Rate;2019;16.17068707;22.03211353;11.28955928
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;304;Other Injuries;2;Percent;2019;0.168588703;0.206963023;0.13594866
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;304;Other Injuries;3;Rate;2019;9.938399814;13.19572927;7.032151478
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;250;Amputation of lower limbs, bilateral;2;Percent;2019;0;0;0
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;250;Amputation of lower limbs, bilateral;3;Rate;2019;0;0;0
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;251;Lower airway burns;2;Percent;2019;0.000242581;0.000621532;7.65E-05
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;251;Lower airway burns;3;Rate;2019;0.040374346;0.104716827;0.012191172
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;255;Muscle and tendon injuries, including sprains and strains lesser dislocations;2;Percent;2019;0.063059736;0.096707605;0.039418344
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;255;Muscle and tendon injuries, including sprains and strains lesser dislocations;3;Rate;2019;6.67293708;10.23902349;4.008461399
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;256;Fracture of clavicle, scapula, or humerus;2;Percent;2019;0.033662005;0.051277704;0.021376916
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;256;Fracture of clavicle, scapula, or humerus;3;Rate;2019;3.568252268;5.623831917;2.178077202
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;257;Fracture of face bones;2;Percent;2019;0.018654063;0.031681089;0.011125712
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;257;Fracture of face bones;3;Rate;2019;1.975842803;3.455614727;1.103220453
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;258;Fracture of foot bones except ankle;2;Percent;2019;0.024223177;0.039390445;0.013567728
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;258;Fracture of foot bones except ankle;3;Rate;2019;2.564676095;4.409360797;1.325249852
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;259;Fracture of hand (wrist and other distal part of hand);2;Percent;2019;0.027954379;0.044540751;0.016559395
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;259;Fracture of hand (wrist and other distal part of hand);3;Rate;2019;2.960901802;4.903162037;1.61447099
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;260;Fracture of hip;2;Percent;2019;0.024548239;0.042790936;0.012699686
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;260;Fracture of hip;3;Rate;2019;2.586266111;4.669899286;1.347438969
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;261;Amputation of upper limbs, bilateral;2;Percent;2019;0.000618719;0.001412931;0.000202319
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;261;Amputation of upper limbs, bilateral;3;Rate;2019;0.065460045;0.1594225;0.020470398
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;262;Fracture of patella, tibia or fibula, or ankle;2;Percent;2019;0.12793858;0.167805547;0.093302749
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;262;Fracture of patella, tibia or fibula, or ankle;3;Rate;2019;13.53651633;19.19796678;9.273205534
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;263;Fracture of pelvis;2;Percent;2019;0.008118561;0.014384967;0.004094546
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;263;Fracture of pelvis;3;Rate;2019;0.859854221;1.600139588;0.407677348
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;264;Fracture of radius and/or ulna;2;Percent;2019;0.061242341;0.08927643;0.040952549
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;264;Fracture of radius and/or ulna;3;Rate;2019;6.477972458;9.84150558;4.098799422
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;265;Fracture of skull;2;Percent;2019;0.007569368;0.014150393;0.003766133
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;265;Fracture of skull;3;Rate;2019;0.802172953;1.513790248;0.375649611
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;266;Fracture of sternum and/or fracture of one or more ribs;2;Percent;2019;0.00267093;0.006024645;0.001007428
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;266;Fracture of sternum and/or fracture of one or more ribs;3;Rate;2019;0.28079993;0.636892871;0.10646327
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;267;Fracture of vertebral column;2;Percent;2019;0.00947378;0.016489531;0.00481534
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;267;Fracture of vertebral column;3;Rate;2019;1.001747999;1.794924537;0.513886186
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;268;Fracture of femur, other than femoral neck;2;Percent;2019;0.055449757;0.08345352;0.034996641
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;268;Fracture of femur, other than femoral neck;3;Rate;2019;5.877746105;9.140539099;3.517433388
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;269;Minor TBI;2;Percent;2019;0.023273816;0.034371992;0.015101046
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;269;Minor TBI;3;Rate;2019;2.462903549;3.839990623;1.473175069
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;270;Moderate/Severe TBI;2;Percent;2019;0.127330341;0.151095999;0.103496035
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;270;Moderate/Severe TBI;3;Rate;2019;13.48111549;17.95529867;10.03097143
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;272;Amputation of fingers (excluding thumb);2;Percent;2019;0.00635401;0.013663917;0.002699343
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;272;Amputation of fingers (excluding thumb);3;Rate;2019;0.674271515;1.501816269;0.26947774
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;273;Foreign body in ear;2;Percent;2019;0.001492175;0.003358849;0.000524587
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;273;Foreign body in ear;3;Rate;2019;0.158303908;0.3580671;0.053174748
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;274;Foreign body in respiratory system;2;Percent;2019;0.001708906;0.003998774;0.00063727
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;274;Foreign body in respiratory system;3;Rate;2019;0.181259307;0.428713552;0.064902067
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;278;Drowning and nonfatal submersion;2;Percent;2019;0.001412969;0.003404792;0.000458798
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;278;Drowning and nonfatal submersion;3;Rate;2019;0.276266534;0.697411444;0.088704961
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;279;Asphyxiation;2;Percent;2019;0.000350339;0.000857862;0.000104475
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;279;Asphyxiation;3;Rate;2019;0.068035123;0.168327688;0.020192819
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;280;Crush injury;2;Percent;2019;0.002611586;0.004842378;0.001259419
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;280;Crush injury;3;Rate;2019;0.509768129;0.968820127;0.233219433
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;281;Nerve injury;2;Percent;2019;0.004142821;0.008471025;0.001675372
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;281;Nerve injury;3;Rate;2019;0.812907492;1.791267133;0.316740079
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;282;Injury to eyes;2;Percent;2019;0.010820057;0.020548912;0.005182445
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;282;Injury to eyes;3;Rate;2019;2.111492332;4.044514289;0.942426084
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;283;Amputation of lower limb, unilateral;2;Percent;2019;0.00311272;0.005739597;0.001497569
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;283;Amputation of lower limb, unilateral;3;Rate;2019;0.606704579;1.098070254;0.278205842
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;284;Open wound(s);2;Percent;2019;0.179897674;0.239745781;0.129982055
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;284;Open wound(s);3;Rate;2019;35.25181056;51.01518524;23.11633654
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;285;Poisoning requiring urgent care;2;Percent;2019;0.006618285;0.013854286;0.002614984
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;285;Poisoning requiring urgent care;3;Rate;2019;1.294121006;2.793717976;0.490877554
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;286;Severe chest Injury;2;Percent;2019;0.024265318;0.039210296;0.014161304
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;286;Severe chest Injury;3;Rate;2019;4.735772128;7.892908168;2.714008261
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;287;Internal hemorrhage in abdomen and pelvis;2;Percent;2019;0.038047366;0.057561111;0.023374333
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;287;Internal hemorrhage in abdomen and pelvis;3;Rate;2019;7.428418745;11.43372895;4.408613974
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;288;Contusion in any part of the body;2;Percent;2019;0.037915737;0.05957045;0.021511167
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;288;Contusion in any part of the body;3;Rate;2019;7.418365134;12.13595331;4.012692909
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;289;Effect of different environmental factors;2;Percent;2019;0.002608898;0.005820225;0.000957788
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;289;Effect of different environmental factors;3;Rate;2019;0.510674075;1.12944147;0.192462523
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;290;Complications following therapeutic procedures;2;Percent;2019;0.017329799;0.030483494;0.009238317
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;290;Complications following therapeutic procedures;3;Rate;2019;3.389924997;6.075384578;1.743039096
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;291;Superficial injury of any part of the body;2;Percent;2019;0.066834556;0.098951438;0.041217448
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;291;Superficial injury of any part of the body;3;Rate;2019;13.10781925;20.63921085;7.524426205
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;292;Multiple fractures, dislocations, crashes, wounds, pains, and strains;2;Percent;2019;0.034733951;0.054618531;0.020969008
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;292;Multiple fractures, dislocations, crashes, wounds, pains, and strains;3;Rate;2019;6.790367539;11.0478551;3.913496657
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;293;Amputation of upper limb, unilateral;2;Percent;2019;0.000765117;0.001698735;0.000292846
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;293;Amputation of upper limb, unilateral;3;Rate;2019;0.149209544;0.341152313;0.054606901
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;294;Amputation of thumb;2;Percent;2019;0.001695234;0.003895592;0.000563017
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;294;Amputation of thumb;3;Rate;2019;0.330707164;0.749105667;0.110846725
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;295;Amputation of toe/toes;2;Percent;2019;0.002077674;0.005012438;0.000686238
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;295;Amputation of toe/toes;3;Rate;2019;0.406692433;0.98667236;0.136649075
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;296;Burns, <20% total burned surface area without lower airway burns;2;Percent;2019;0.007144258;0.014316238;0.003289134
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;296;Burns, <20% total burned surface area without lower airway burns;3;Rate;2019;1.397019242;2.808600494;0.599317692
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;300;Fractures;2;Percent;2019;0.435970767;0.520720838;0.355856427
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;300;Fractures;3;Rate;2019;24.54127363;33.73060817;16.44258939
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;301;Head Injuries;2;Percent;2019;0.046859582;0.070008901;0.030854874
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;301;Head Injuries;3;Rate;2019;2.642367226;4.460877029;1.509046358
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;302;Spinal Injuries;2;Percent;2019;0.000615665;0.001145806;0.000291399
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;302;Spinal Injuries;3;Rate;2019;0.034832167;0.07203892;0.014740898
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;303;Minor Injuries;2;Percent;2019;0.358641258;0.452435888;0.273672053
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;303;Minor Injuries;3;Rate;2019;20.30633674;30.54189104;12.25121058
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;304;Other Injuries;2;Percent;2019;0.136726136;0.179960871;0.101038655
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;304;Other Injuries;3;Rate;2019;7.711942178;11.71658228;4.850357583
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;268;Fracture of femur, other than femoral neck;2;Percent;2019;0.047766478;0.075017149;0.02966014
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;268;Fracture of femur, other than femoral neck;3;Rate;2019;2.816367955;4.685420687;1.65112763
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;269;Minor TBI;2;Percent;2019;0.025738834;0.039476116;0.016418898
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;269;Minor TBI;3;Rate;2019;1.516024609;2.443394087;0.895144709
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;270;Moderate/Severe TBI;2;Percent;2019;0.108295606;0.135369233;0.08509183
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;270;Moderate/Severe TBI;3;Rate;2019;6.364315025;8.456576585;4.612529128
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;272;Amputation of fingers (excluding thumb);2;Percent;2019;0.006835601;0.01475197;0.00258351
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;272;Amputation of fingers (excluding thumb);3;Rate;2019;0.402740109;0.897613286;0.145395451
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;273;Foreign body in ear;2;Percent;2019;0.00164326;0.00458491;0.000478171
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;273;Foreign body in ear;3;Rate;2019;0.097057514;0.270912995;0.025987422
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;274;Foreign body in respiratory system;2;Percent;2019;0.002969496;0.007260861;0.00099727
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;274;Foreign body in respiratory system;3;Rate;2019;0.174983404;0.425450893;0.055789286
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;275;Foreign body in GI and urogenital system;2;Percent;2019;0.002611138;0.006890999;0.000833757
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;275;Foreign body in GI and urogenital system;3;Rate;2019;0.154374839;0.415756168;0.04711422
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;276;Spinal cord lesion at neck level;2;Percent;2019;0.000755188;0.001630174;0.000280639
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;276;Spinal cord lesion at neck level;3;Rate;2019;0.044514725;0.099057788;0.016583384
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;277;Spinal cord lesion below neck level;2;Percent;2019;0.000482061;0.001140526;0.000161966
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;277;Spinal cord lesion below neck level;3;Rate;2019;0.028318575;0.066119356;0.008936412
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;278;Drowning and nonfatal submersion;2;Percent;2019;0.001115277;0.003065426;0.00031702
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;278;Drowning and nonfatal submersion;3;Rate;2019;0.065555874;0.178169748;0.017924349
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;279;Asphyxiation;2;Percent;2019;0.001723719;0.004440552;0.000463969
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;279;Asphyxiation;3;Rate;2019;0.101797554;0.27904195;0.025519278
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;280;Crush injury;2;Percent;2019;0.003326525;0.006304645;0.00149179
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;280;Crush injury;3;Rate;2019;0.19586549;0.384786749;0.086526408
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;281;Nerve injury;2;Percent;2019;0.004616958;0.010421808;0.001671921
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;281;Nerve injury;3;Rate;2019;0.27288259;0.622252765;0.095452778
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;282;Injury to eyes;2;Percent;2019;0.005659207;0.01250994;0.002298731
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;282;Injury to eyes;3;Rate;2019;0.333376159;0.760301955;0.128617619
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;283;Amputation of lower limb, unilateral;2;Percent;2019;0.019498398;0.032064068;0.010475522
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;283;Amputation of lower limb, unilateral;3;Rate;2019;1.142348431;1.947582737;0.605602419
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;284;Open wound(s);2;Percent;2019;0.133873462;0.191301426;0.092620574
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;284;Open wound(s);3;Rate;2019;7.892495809;12.21553297;5.019583756
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;285;Poisoning requiring urgent care;2;Percent;2019;0.022528567;0.041003578;0.011353245
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;285;Poisoning requiring urgent care;3;Rate;2019;1.32681476;2.458162741;0.629267499
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;286;Severe chest Injury;2;Percent;2019;0.011371392;0.020340334;0.00611534
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;286;Severe chest Injury;3;Rate;2019;0.670638332;1.292885118;0.340302887
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;287;Internal hemorrhage in abdomen and pelvis;2;Percent;2019;0.025868465;0.041589827;0.015301775
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;287;Internal hemorrhage in abdomen and pelvis;3;Rate;2019;1.523514598;2.481710937;0.84735074
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;291;Superficial injury of any part of the body;2;Percent;2019;0.058162209;0.087497388;0.034246199
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;291;Superficial injury of any part of the body;3;Rate;2019;9.730874594;16.23225914;5.342145863
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;292;Multiple fractures, dislocations, crashes, wounds, pains, and strains;2;Percent;2019;0.023934877;0.040159543;0.013034065
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;292;Multiple fractures, dislocations, crashes, wounds, pains, and strains;3;Rate;2019;4.002117101;7.144657188;2.065707735
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;293;Amputation of upper limb, unilateral;2;Percent;2019;0.000401357;0.000920335;0.000134646
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;293;Amputation of upper limb, unilateral;3;Rate;2019;0.066890309;0.157358025;0.021997552
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;294;Amputation of thumb;2;Percent;2019;0.0021932;0.005255801;0.000724395
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;294;Amputation of thumb;3;Rate;2019;0.366497406;0.902515281;0.115900329
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;295;Amputation of toe/toes;2;Percent;2019;0.003885494;0.008589457;0.001255062
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;295;Amputation of toe/toes;3;Rate;2019;0.647318186;1.438517629;0.218218572
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;296;Burns, <20% total burned surface area without lower airway burns;2;Percent;2019;0.008185684;0.016433632;0.003602935
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;296;Burns, <20% total burned surface area without lower airway burns;3;Rate;2019;1.36514421;2.741364931;0.562606646
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;297;Burns, >=20% total burned surface area or >= 10% burned surface area if head/neck or hands/wrist involved w/o lower airway burns;2;Percent;2019;0.004117921;0.007270854;0.002332168
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;297;Burns, >=20% total burned surface area or >= 10% burned surface area if head/neck or hands/wrist involved w/o lower airway burns;3;Rate;2019;0.687904472;1.222064636;0.366300964
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;298;Amputations;2;Percent;2019;0.015036223;0.02395183;0.009264607
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;298;Amputations;3;Rate;2019;2.507962168;4.115212115;1.455556139
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;299;Burns;2;Percent;2019;0.012546186;0.021124902;0.007292517
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;299;Burns;3;Rate;2019;2.093423028;3.591574732;1.165273748
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;300;Fractures;2;Percent;2019;0.398441152;0.44829968;0.349754112
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;300;Fractures;3;Rate;2019;66.49579948;86.8445024;51.72291946
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;301;Head Injuries;2;Percent;2019;0.1011812;0.125199358;0.079985685
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;301;Head Injuries;3;Rate;2019;16.87232769;23.13020405;12.20145928
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;302;Spinal Injuries;2;Percent;2019;0.001092716;0.001919505;0.000553369
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;302;Spinal Injuries;3;Rate;2019;0.182262534;0.322711232;0.084877439
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;303;Minor Injuries;2;Percent;2019;0.34326156;0.404719105;0.286152768
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;303;Minor Injuries;3;Rate;2019;57.36015235;75.24517265;42.2994927
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;304;Other Injuries;2;Percent;2019;0.128440962;0.158003956;0.102078796
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;304;Other Injuries;3;Rate;2019;21.4497504;29.06981637;15.3798688
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;250;Amputation of lower limbs, bilateral;2;Percent;2019;0.000433237;0.000966195;0.000137376
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;250;Amputation of lower limbs, bilateral;3;Rate;2019;0.045832234;0.102817029;0.014766235
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;251;Lower airway burns;2;Percent;2019;0.000369551;0.000895288;0.000120816
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;251;Lower airway burns;3;Rate;2019;0.039046559;0.092361757;0.012299669
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;252;Dislocation of hip;2;Percent;2019;0.004403507;0.009267341;0.00169807
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;252;Dislocation of hip;3;Rate;2019;0.466081825;1.029873392;0.178175383
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;253;Dislocation of knee;2;Percent;2019;0.004738489;0.010956505;0.001947523
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;253;Dislocation of knee;3;Rate;2019;0.503250268;1.110734843;0.1944027
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;254;Dislocation of shoulder;2;Percent;2019;0.007067718;0.013927345;0.003231577
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;254;Dislocation of shoulder;3;Rate;2019;0.747770488;1.466027705;0.328297763
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;258;Fracture of foot bones except ankle;2;Percent;2019;0.011962725;0.022874931;0.006160205
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;258;Fracture of foot bones except ankle;3;Rate;2019;2.344459741;4.689784094;1.141246765
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;259;Fracture of hand (wrist and other distal part of hand);2;Percent;2019;0.012732423;0.022190464;0.006725161
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;259;Fracture of hand (wrist and other distal part of hand);3;Rate;2019;2.484314975;4.472404985;1.264494951
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;260;Fracture of hip;2;Percent;2019;0.021602163;0.038828939;0.011215758
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;260;Fracture of hip;3;Rate;2019;4.21042413;7.687726849;2.100930712
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;261;Amputation of upper limbs, bilateral;2;Percent;2019;0.000430427;0.000960717;0.000127507
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;261;Amputation of upper limbs, bilateral;3;Rate;2019;0.083934439;0.190740295;0.025066921
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;262;Fracture of patella, tibia or fibula, or ankle;2;Percent;2019;0.084038134;0.118982964;0.056559869
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;262;Fracture of patella, tibia or fibula, or ankle;3;Rate;2019;16.41590651;24.73439226;10.62439535
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;263;Fracture of pelvis;2;Percent;2019;0.018263897;0.030235874;0.010224086
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;263;Fracture of pelvis;3;Rate;2019;3.567246259;6.018012824;1.855665285
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;264;Fracture of radius and/or ulna;2;Percent;2019;0.038271288;0.060115674;0.023025345
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;264;Fracture of radius and/or ulna;3;Rate;2019;7.482324957;12.15419084;4.215348026
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;265;Fracture of skull;2;Percent;2019;0.013507969;0.023131076;0.007088731
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;265;Fracture of skull;3;Rate;2019;2.644640065;4.672222092;1.326895979
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;266;Fracture of sternum and/or fracture of one or more ribs;2;Percent;2019;0.005602628;0.010702456;0.002625847
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;266;Fracture of sternum and/or fracture of one or more ribs;3;Rate;2019;1.094405764;2.182305505;0.50748839
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;267;Fracture of vertebral column;2;Percent;2019;0.025938832;0.041789234;0.014790783
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;267;Fracture of vertebral column;3;Rate;2019;5.061402168;8.387875283;2.798552062
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;268;Fracture of femur, other than femoral neck;2;Percent;2019;0.057063349;0.086902357;0.035401844
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;268;Fracture of femur, other than femoral neck;3;Rate;2019;11.16355317;17.63263156;6.568214722
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;269;Minor TBI;2;Percent;2019;0.038317837;0.058441806;0.023688338
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;269;Minor TBI;3;Rate;2019;7.494208036;11.83135394;4.453290191
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;270;Moderate/Severe TBI;2;Percent;2019;0.093644828;0.11283551;0.076688878
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;270;Moderate/Severe TBI;3;Rate;2019;18.27676937;23.25352497;13.76523247
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;272;Amputation of fingers (excluding thumb);2;Percent;2019;0.004278991;0.009509239;0.001702811
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;272;Amputation of fingers (excluding thumb);3;Rate;2019;0.840106828;1.93543306;0.316107249
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;273;Foreign body in ear;2;Percent;2019;0.001721102;0.004222347;0.000585885
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;273;Foreign body in ear;3;Rate;2019;0.336293989;0.818311042;0.111848296
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;274;Foreign body in respiratory system;2;Percent;2019;0.002194166;0.00511692;0.000785535
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;274;Foreign body in respiratory system;3;Rate;2019;0.428502534;0.993500518;0.150696326
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;275;Foreign body in GI and urogenital system;2;Percent;2019;0.00187022;0.004559895;0.000651989
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;275;Foreign body in GI and urogenital system;3;Rate;2019;0.36667127;0.924610786;0.121764694
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;276;Spinal cord lesion at neck level;2;Percent;2019;0.001268477;0.002503276;0.000556397
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;276;Spinal cord lesion at neck level;3;Rate;2019;0.24753385;0.488544719;0.106002315
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;277;Spinal cord lesion below neck level;2;Percent;2019;0.000847392;0.00187038;0.000327244
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;277;Spinal cord lesion below neck level;3;Rate;2019;0.165810242;0.374373374;0.061722625
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;281;Nerve injury;2;Percent;2019;0.006440718;0.016471518;0.001950899
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;281;Nerve injury;3;Rate;2019;0.36273461;0.93988742;0.101598418
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;282;Injury to eyes;2;Percent;2019;0.007916426;0.019023357;0.002621162
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;282;Injury to eyes;3;Rate;2019;0.446534431;1.099652026;0.13871019
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;283;Amputation of lower limb, unilateral;2;Percent;2019;0.000725151;0.001532137;0.000305788
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;283;Amputation of lower limb, unilateral;3;Rate;2019;0.04090947;0.094040868;0.015676641
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;284;Open wound(s);2;Percent;2019;0.148753515;0.237637902;0.082484738
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;284;Open wound(s);3;Rate;2019;8.410174391;14.29624134;4.362570521
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;285;Poisoning requiring urgent care;2;Percent;2019;0.010332061;0.023876868;0.003549159
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;285;Poisoning requiring urgent care;3;Rate;2019;0.583410896;1.523740123;0.173458482
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;286;Severe chest Injury;2;Percent;2019;0.009948715;0.022120751;0.003577664
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;286;Severe chest Injury;3;Rate;2019;0.561693061;1.340605083;0.184386686
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;287;Internal hemorrhage in abdomen and pelvis;2;Percent;2019;0.020548327;0.040928975;0.009037046
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;287;Internal hemorrhage in abdomen and pelvis;3;Rate;2019;1.158025306;2.366423405;0.460474358
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;288;Contusion in any part of the body;2;Percent;2019;0.059521827;0.116044299;0.024315247
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;288;Contusion in any part of the body;3;Rate;2019;3.371093642;7.151017364;1.226895297
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;289;Effect of different environmental factors;2;Percent;2019;0.004185183;0.01179997;0.001052169
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;289;Effect of different environmental factors;3;Rate;2019;0.23451516;0.638698668;0.055325973
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;290;Complications following therapeutic procedures;2;Percent;2019;0.022057621;0.045925736;0.008750559
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;290;Complications following therapeutic procedures;3;Rate;2019;1.246835145;2.802151529;0.43047397
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;291;Superficial injury of any part of the body;2;Percent;2019;0.082285969;0.150316018;0.038157728
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;291;Superficial injury of any part of the body;3;Rate;2019;4.674833746;9.356267968;1.863213182
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;292;Multiple fractures, dislocations, crashes, wounds, pains, and strains;2;Percent;2019;0.021211772;0.043092609;0.008692999
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;292;Multiple fractures, dislocations, crashes, wounds, pains, and strains;3;Rate;2019;1.194784458;2.504128768;0.44874862
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;293;Amputation of upper limb, unilateral;2;Percent;2019;0.000251725;0.000651578;7.64E-05
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;293;Amputation of upper limb, unilateral;3;Rate;2019;0.014204198;0.040186177;0.003869241
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;294;Amputation of thumb;2;Percent;2019;0.003172448;0.008567691;0.000805494
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;294;Amputation of thumb;3;Rate;2019;0.177417675;0.471691417;0.042884737
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;295;Amputation of toe/toes;2;Percent;2019;0.003711963;0.011142425;0.000888787
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;295;Amputation of toe/toes;3;Rate;2019;0.21007447;0.637397634;0.045456953
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;296;Burns, <20% total burned surface area without lower airway burns;2;Percent;2019;0.006501609;0.016077441;0.001925085
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;296;Burns, <20% total burned surface area without lower airway burns;3;Rate;2019;0.365307521;0.938043326;0.103985495
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;297;Burns, >=20% total burned surface area or >= 10% burned surface area if head/neck or hands/wrist involved w/o lower airway burns;2;Percent;2019;0.000666794;0.001403835;0.000265872
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;297;Burns, >=20% total burned surface area or >= 10% burned surface area if head/neck or hands/wrist involved w/o lower airway burns;3;Rate;2019;0.037818065;0.085229692;0.013671382
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;298;Amputations;2;Percent;2019;0.014018189;0.027201418;0.007244055
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;298;Amputations;3;Rate;2019;0.78771999;1.591510097;0.37134131
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;299;Burns;2;Percent;2019;0.007168403;0.016843758;0.002593995
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;299;Burns;3;Rate;2019;0.403125586;0.975634509;0.13141108
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;250;Amputation of lower limbs, bilateral;2;Percent;2019;0.000234746;0.000603636;7.02E-05
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;250;Amputation of lower limbs, bilateral;3;Rate;2019;0.013831332;0.037596085;0.003928996
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;251;Lower airway burns;2;Percent;2019;0.000217843;0.000604857;5.82E-05
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;251;Lower airway burns;3;Rate;2019;0.012793371;0.035244442;0.003301019
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;252;Dislocation of hip;2;Percent;2019;0.005313585;0.012058801;0.002020185
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;252;Dislocation of hip;3;Rate;2019;0.313319351;0.718786576;0.115392665
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;253;Dislocation of knee;2;Percent;2019;0.005072395;0.011920117;0.001903313
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;253;Dislocation of knee;3;Rate;2019;0.298900356;0.727903502;0.107556127
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;254;Dislocation of shoulder;2;Percent;2019;0.006456679;0.013188524;0.002828298
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;254;Dislocation of shoulder;3;Rate;2019;0.381338699;0.813980584;0.153614384
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;255;Muscle and tendon injuries, including sprains and strains lesser dislocations;2;Percent;2019;0.072081612;0.108236027;0.042743219
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;255;Muscle and tendon injuries, including sprains and strains lesser dislocations;3;Rate;2019;4.255025157;6.725960512;2.418756175
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;256;Fracture of clavicle, scapula, or humerus;2;Percent;2019;0.033889846;0.056049586;0.020523505
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;256;Fracture of clavicle, scapula, or humerus;3;Rate;2019;1.997974593;3.40055556;1.147309223
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;257;Fracture of face bones;2;Percent;2019;0.012407104;0.022791447;0.006668808
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;257;Fracture of face bones;3;Rate;2019;0.730608019;1.421462503;0.381205861
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;258;Fracture of foot bones except ankle;2;Percent;2019;0.014952532;0.027412451;0.007332161
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;258;Fracture of foot bones except ankle;3;Rate;2019;0.880420833;1.608498088;0.404340225
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;259;Fracture of hand (wrist and other distal part of hand);2;Percent;2019;0.02346978;0.038198686;0.013477399
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;259;Fracture of hand (wrist and other distal part of hand);3;Rate;2019;1.382683566;2.482185328;0.755156866
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;260;Fracture of hip;2;Percent;2019;0.034734507;0.059294052;0.019187308
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;260;Fracture of hip;3;Rate;2019;2.036391673;3.521205472;1.127923573
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;261;Amputation of upper limbs, bilateral;2;Percent;2019;0.000454433;0.001152417;0.000138658
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;261;Amputation of upper limbs, bilateral;3;Rate;2019;0.026753305;0.07073464;0.007987624
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;262;Fracture of patella, tibia or fibula, or ankle;2;Percent;2019;0.107506187;0.146039516;0.075924147
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;262;Fracture of patella, tibia or fibula, or ankle;3;Rate;2019;6.333712457;9.254098642;4.101382714
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;263;Fracture of pelvis;2;Percent;2019;0.013543338;0.024038677;0.006956458
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;263;Fracture of pelvis;3;Rate;2019;0.79778435;1.455663417;0.382020053
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;264;Fracture of radius and/or ulna;2;Percent;2019;0.059786602;0.088327266;0.037886414
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;264;Fracture of radius and/or ulna;3;Rate;2019;3.518013545;5.450043613;2.12622993
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;265;Fracture of skull;2;Percent;2019;0.00922394;0.018423754;0.004292335
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;265;Fracture of skull;3;Rate;2019;0.544689279;1.164178687;0.238700492
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;266;Fracture of sternum and/or fracture of one or more ribs;2;Percent;2019;0.002500335;0.005994702;0.000843207
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;266;Fracture of sternum and/or fracture of one or more ribs;3;Rate;2019;0.14776287;0.356333888;0.045406168
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;267;Fracture of vertebral column;2;Percent;2019;0.011962716;0.02185106;0.006384598
+6;Incidence;86;Italy;3;Both;22;All ages;690;Pedestrian road injuries;267;Fracture of vertebral column;3;Rate;2019;0.704353308;1.265830539;0.351003389
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;272;Amputation of fingers (excluding thumb);2;Percent;2019;0.005919951;0.012765161;0.002305528
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;272;Amputation of fingers (excluding thumb);3;Rate;2019;0.989232736;2.245151856;0.367063836
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;273;Foreign body in ear;2;Percent;2019;0.002339243;0.005684827;0.000805603
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;273;Foreign body in ear;3;Rate;2019;0.391356443;0.943769967;0.131435795
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;274;Foreign body in respiratory system;2;Percent;2019;0.002842418;0.006874689;0.001058335
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;274;Foreign body in respiratory system;3;Rate;2019;0.473559073;1.159447425;0.172427541
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;275;Foreign body in GI and urogenital system;2;Percent;2019;0.002468573;0.005646866;0.000950633
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;275;Foreign body in GI and urogenital system;3;Rate;2019;0.410978075;0.93781612;0.149054554
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;276;Spinal cord lesion at neck level;2;Percent;2019;0.000669374;0.001406224;0.000269688
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;276;Spinal cord lesion at neck level;3;Rate;2019;0.111886254;0.232924662;0.042808941
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;277;Spinal cord lesion below neck level;2;Percent;2019;0.000423342;0.000935521;0.000153685
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;277;Spinal cord lesion below neck level;3;Rate;2019;0.070376281;0.157945282;0.024956085
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;278;Drowning and nonfatal submersion;2;Percent;2019;0.001814151;0.004064479;0.000627925
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;278;Drowning and nonfatal submersion;3;Rate;2019;0.302552795;0.706049918;0.099305121
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;279;Asphyxiation;2;Percent;2019;0.002728108;0.006245311;0.000828121
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;279;Asphyxiation;3;Rate;2019;0.452207959;1.087221695;0.135103065
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;280;Crush injury;2;Percent;2019;0.001796508;0.003466634;0.000768301
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;280;Crush injury;3;Rate;2019;0.299939231;0.58472384;0.128611875
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;281;Nerve injury;2;Percent;2019;0.004736061;0.010015186;0.001798539
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;281;Nerve injury;3;Rate;2019;0.791933946;1.740510776;0.284525969
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;282;Injury to eyes;2;Percent;2019;0.009270868;0.018442636;0.004108271
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;282;Injury to eyes;3;Rate;2019;1.547045164;3.031560131;0.643131752
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;283;Amputation of lower limb, unilateral;2;Percent;2019;0.002291838;0.004407743;0.001053128
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;283;Amputation of lower limb, unilateral;3;Rate;2019;0.380733284;0.734728201;0.169845276
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;284;Open wound(s);2;Percent;2019;0.173379448;0.231773036;0.122784881
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;284;Open wound(s);3;Rate;2019;28.93277751;41.51557487;19.18232553
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;285;Poisoning requiring urgent care;2;Percent;2019;0.009523959;0.019338347;0.004324316
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;285;Poisoning requiring urgent care;3;Rate;2019;1.590544922;3.276654088;0.673631539
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;286;Severe chest Injury;2;Percent;2019;0.008821243;0.017872364;0.004066437
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;286;Severe chest Injury;3;Rate;2019;1.474222868;2.915922021;0.666581921
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;287;Internal hemorrhage in abdomen and pelvis;2;Percent;2019;0.022572374;0.037871267;0.012426238
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;287;Internal hemorrhage in abdomen and pelvis;3;Rate;2019;3.769884813;6.459803885;1.959401691
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;288;Contusion in any part of the body;2;Percent;2019;0.037400255;0.060413583;0.021462622
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;288;Contusion in any part of the body;3;Rate;2019;6.263097154;10.78021001;3.354388615
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;289;Effect of different environmental factors;2;Percent;2019;0.003060929;0.007260836;0.000981783
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;289;Effect of different environmental factors;3;Rate;2019;0.511937272;1.262714996;0.157966493
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;290;Complications following therapeutic procedures;2;Percent;2019;0.016810219;0.029884535;0.007772184
+6;Incidence;86;Italy;3;Both;22;All ages;691;Cyclist road injuries;290;Complications following therapeutic procedures;3;Rate;2019;2.808937071;5.381552423;1.26844507
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;294;Amputation of thumb;2;Percent;2019;0.001602342;0.003450466;0.000594945
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;294;Amputation of thumb;3;Rate;2019;0.169687227;0.38519009;0.061793748
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;295;Amputation of toe/toes;2;Percent;2019;0.003042115;0.006514366;0.001107431
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;295;Amputation of toe/toes;3;Rate;2019;0.321325448;0.682692511;0.115659474
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;296;Burns, <20% total burned surface area without lower airway burns;2;Percent;2019;0.009257835;0.017780427;0.004212975
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;296;Burns, <20% total burned surface area without lower airway burns;3;Rate;2019;0.980850067;1.90931849;0.441013162
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;297;Burns, >=20% total burned surface area or >= 10% burned surface area if head/neck or hands/wrist involved w/o lower airway burns;2;Percent;2019;0.008704493;0.014537581;0.004877217
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;297;Burns, >=20% total burned surface area or >= 10% burned surface area if head/neck or hands/wrist involved w/o lower airway burns;3;Rate;2019;0.921097359;1.543832394;0.497985052
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;298;Amputations;2;Percent;2019;0.021393624;0.031024336;0.01455522
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;298;Amputations;3;Rate;2019;2.263871191;3.398882092;1.458309514
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;299;Burns;2;Percent;2019;0.018331878;0.027550273;0.011602165
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;299;Burns;3;Rate;2019;1.940993985;3.112664982;1.167882249
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;300;Fractures;2;Percent;2019;0.401505179;0.450741647;0.351030917
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;300;Fractures;3;Rate;2019;42.49274907;54.01658793;33.47402227
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;301;Head Injuries;2;Percent;2019;0.150604158;0.175674427;0.125216432
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;301;Head Injuries;3;Rate;2019;15.94401904;20.92178936;12.05222995
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;302;Spinal Injuries;2;Percent;2019;0.001935226;0.003307494;0.001044113
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;302;Spinal Injuries;3;Rate;2019;0.205079478;0.36795056;0.105378061
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;303;Minor Injuries;2;Percent;2019;0.286179973;0.343439979;0.234057603
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;303;Minor Injuries;3;Rate;2019;30.36147654;41.52932413;21.64237175
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;304;Other Injuries;2;Percent;2019;0.120049962;0.144597957;0.09754224
+6;Incidence;86;Italy;3;Both;22;All ages;692;Motorcyclist road injuries;304;Other Injuries;3;Rate;2019;12.70948596;16.77359323;9.225642943
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;250;Amputation of lower limbs, bilateral;2;Percent;2019;0.000320849;0.000780253;0.000100989
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;250;Amputation of lower limbs, bilateral;3;Rate;2019;0.062654892;0.15739521;0.018797437
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;251;Lower airway burns;2;Percent;2019;0.000264792;0.000697156;7.96E-05
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;251;Lower airway burns;3;Rate;2019;0.051699668;0.132135295;0.015208236
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;252;Dislocation of hip;2;Percent;2019;0.007194764;0.01392941;0.003200317
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;252;Dislocation of hip;3;Rate;2019;1.405284893;2.928241177;0.612006666
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;253;Dislocation of knee;2;Percent;2019;0.003603931;0.008044595;0.001403085
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;253;Dislocation of knee;3;Rate;2019;0.703596591;1.537470903;0.264835311
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;254;Dislocation of shoulder;2;Percent;2019;0.004746664;0.009691977;0.001914191
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;254;Dislocation of shoulder;3;Rate;2019;0.929245935;1.935810389;0.357698838
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;255;Muscle and tendon injuries, including sprains and strains lesser dislocations;2;Percent;2019;0.050388316;0.075205969;0.030242464
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;255;Muscle and tendon injuries, including sprains and strains lesser dislocations;3;Rate;2019;9.875584498;15.82108564;5.44243974
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;256;Fracture of clavicle, scapula, or humerus;2;Percent;2019;0.03285275;0.051439696;0.019923208
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;256;Fracture of clavicle, scapula, or humerus;3;Rate;2019;6.413135588;10.42307314;3.686540816
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;257;Fracture of face bones;2;Percent;2019;0.022504264;0.03652294;0.012549003
+6;Incidence;86;Italy;3;Both;22;All ages;693;Motor vehicle road injuries;257;Fracture of face bones;3;Rate;2019;4.395108835;7.375626172;2.383640128
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;261;Amputation of upper limbs, bilateral;2;Percent;2019;0.00020934;0.000561531;6.15E-05
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;261;Amputation of upper limbs, bilateral;3;Rate;2019;0.011773838;0.03121603;0.00328303
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;262;Fracture of patella, tibia or fibula, or ankle;2;Percent;2019;0.087560347;0.143679829;0.049189805
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;262;Fracture of patella, tibia or fibula, or ankle;3;Rate;2019;4.935250697;8.944976048;2.42238033
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;263;Fracture of pelvis;2;Percent;2019;0.012197333;0.027952264;0.004264281
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;263;Fracture of pelvis;3;Rate;2019;0.689358851;1.66511996;0.221365433
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;264;Fracture of radius and/or ulna;2;Percent;2019;0.104144289;0.167138112;0.058373266
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;264;Fracture of radius and/or ulna;3;Rate;2019;5.862755594;10.27159857;2.93053721
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;265;Fracture of skull;2;Percent;2019;0.016202507;0.036826931;0.006101272
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;265;Fracture of skull;3;Rate;2019;0.912653161;2.151491231;0.287914919
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;266;Fracture of sternum and/or fracture of one or more ribs;2;Percent;2019;0.005933213;0.014316936;0.001806555
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;266;Fracture of sternum and/or fracture of one or more ribs;3;Rate;2019;0.334145905;0.829988265;0.092431915
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;267;Fracture of vertebral column;2;Percent;2019;0.011235681;0.024117151;0.003874722
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;267;Fracture of vertebral column;3;Rate;2019;0.634959668;1.447189531;0.202275485
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;268;Fracture of femur, other than femoral neck;2;Percent;2019;0.040192525;0.074485016;0.017979256
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;268;Fracture of femur, other than femoral neck;3;Rate;2019;2.271641558;4.725931216;0.945201522
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;269;Minor TBI;2;Percent;2019;0.027363135;0.050993072;0.012575115
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;269;Minor TBI;3;Rate;2019;1.541725013;3.043418266;0.641381798
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;270;Moderate/Severe TBI;2;Percent;2019;0.019496447;0.025174958;0.01460104
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;270;Moderate/Severe TBI;3;Rate;2019;1.100642214;1.641989021;0.685475892
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;272;Amputation of fingers (excluding thumb);2;Percent;2019;0.005752523;0.016243669;0.001667012
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;272;Amputation of fingers (excluding thumb);3;Rate;2019;0.322340468;0.875917354;0.088368808
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;273;Foreign body in ear;2;Percent;2019;0;0;0
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;273;Foreign body in ear;3;Rate;2019;0;0;0
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;274;Foreign body in respiratory system;2;Percent;2019;0.003587559;0.009242535;0.000869842
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;274;Foreign body in respiratory system;3;Rate;2019;0.20233215;0.547709936;0.044736697
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;275;Foreign body in GI and urogenital system;2;Percent;2019;0.003807153;0.010643728;0.00087731
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;275;Foreign body in GI and urogenital system;3;Rate;2019;0.215291713;0.61600145;0.047612765
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;276;Spinal cord lesion at neck level;2;Percent;2019;0.000350717;0.000781113;0.000123854
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;276;Spinal cord lesion at neck level;3;Rate;2019;0.019855033;0.045820246;0.006646846
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;277;Spinal cord lesion below neck level;2;Percent;2019;0.000264948;0.000594051;8.34E-05
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;277;Spinal cord lesion below neck level;3;Rate;2019;0.014977133;0.034518796;0.004639442
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;278;Drowning and nonfatal submersion;2;Percent;2019;0.00282425;0.007565444;0.000708828
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;278;Drowning and nonfatal submersion;3;Rate;2019;0.15876552;0.436528417;0.037484479
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;279;Asphyxiation;2;Percent;2019;0;0;0
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;279;Asphyxiation;3;Rate;2019;0;0;0
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;280;Crush injury;2;Percent;2019;0.000436681;0.000943214;0.00016552
+6;Incidence;86;Italy;3;Both;22;All ages;694;Other road injuries;280;Crush injury;3;Rate;2019;0.024671903;0.060923547;0.008543323

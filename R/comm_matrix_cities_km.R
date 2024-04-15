@@ -1,0 +1,24 @@
+#' Modified commuting matrix for Italian province capitals
+#'
+#' @format A tibble
+#'
+#' \describe{
+#'  \item{code}{Istat city code}
+#'  \item{city}{Name of province capital}
+#'  \item{region}{Italian region name}
+#'  \item{province}{Italian province name}
+#'  \item{nuts1}{NUTS 1 code}
+#'  \item{nuts2}{NUTS 2 code}
+#'  \item{nuts3}{NUTS 3 code}
+#'  \item{travel_time}{Commuting time range (one way), in minutes}
+#'  \item{avg_travel_time}{Average commuting time, in minutes}
+#'  \item{speed_kmh}{Average speed, km/h}
+#'  \item{km_one_way}{Commuting distance, one way, km}
+#'  \item{km_round_trip}{Commuting distance, round trip, km}
+#'  \item{mode}{Transportation mode}
+#'  \item{travel_reason}{Travel reason: study or work}
+#'  \item{place_of_destination}{Destination, within or outside same municipality}
+#'  \item{individuals}{Number of commuters}
+#' }
+#' @source <https://www.istat.it/it/archivio/139381>
+"comm_matrix_cities_km"
