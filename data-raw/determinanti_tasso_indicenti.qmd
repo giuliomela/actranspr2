@@ -1,0 +1,688 @@
+---
+title: "Determinanti del tassodi incidentalità stradale"
+author: "Giulio Mela"
+format: html
+lang: it
+execute: 
+  eval: true
+  warning: false
+  echo: false
+embed-resources: true
+bibliography: esternalità_mobilità_dolce.bib
+---
+
+# Libraries
+
+```{r}
+library(tidyverse)
+library(here)
+library(xlsx)
+library(readr)
+library(readxl)
+library(rdbnomics)
+library(rsdmx)
+library(actranspr2)
+library(tidymodels)
+library(AER)
+library(censReg)
+library(broom.mixed)
+library(dotwhisker)
+library(skimr)
+
+data_raw_path <- here("data-raw", "data_raw.xlsx")
+
+data_raw_sheets <- excel_sheets(data_raw_path)
+
+codici_comuni_2011 <- read_excel(data_raw_path,
+                                          sheet = "codici_comuni_2011")
+
+# Preparo la matrice di pendolarismo con tutti i mezzi di trasporto
+
+commuting_matrix <- readRDS(here("data-raw", "commuting_matrix.rds"))
+
+names(commuting_matrix) <- c("record_type", "residence_type", "prov_code", "mun_code",
+                             "sex", "travel_reason", "place_of_destination", "province_work", "municipality_work", "country_work",
+                             "mean_of_transp", "leaving_hour", "travel_time", "individuals_estimate",
+                             "individuals")
+
+# Municipality names, in the commuting matrix, are coded. For this reason it is
+# necessary to pair them with municipality names.
+
+# Loading municipality names (manually downloaded from ISTAT)
+
+
+
+mun_codes <- codici_comuni_2011 %>%
+  select(4, 7, 11, 12, 18:20) %>% # selecting only codes and names
+  rename(code = 1, name = 2, region = 3, province = 4, nuts1 = 5,
+         nuts2 = 6, nuts3 = 7) %>%
+  mutate(name = if_else(name == "Roma Capitale", "Roma", name),
+         nuts2 = if_else(province == "Trento",
+                         "ITH2",
+                         nuts2))
+
+# Adding municipality names to the commuting matrix
+
+commuting_matrix <- commuting_matrix %>%
+  mutate(code = paste0(prov_code, mun_code),
+         prov_code = NULL, mun_code = NULL) %>%
+  left_join(mun_codes) %>%
+  rename(city = name)
+
+
+# Manipulating the commuting matrix to extract relevant information
+# although the original matrix distinguishes between male and female commuters, here they are summed up together
+
+regional_capital <- read_excel(
+  here("data-raw", "data_raw.xlsx"),
+  sheet = "regional_capitals"
+)
+
+prov_capitals <- unique(regional_capitals$prov_capital)
+
+nuts_codes <- codici_comuni_2023 %>%
+  select(city = `Denominazione in italiano`,
+         nuts2 = `Codice NUTS2 2021 (3)`,
+         nuts3 = `Codice NUTS3 2021`, province = Provincia)
+
+prov_capitals <- regional_capitals %>%
+  left_join(nuts_codes) %>%
+  filter(city %in% prov_capitals)
+
+comm_matrix_light <- commuting_matrix %>%
+  filter(record_type == "L") %>% # detailed data
+  group_by(travel_reason, place_of_destination, code,
+           city, region, province, nuts1, nuts2, nuts3,
+           mean_of_transp, travel_time, sex) %>%
+  summarize(individuals = sum(as.numeric(individuals_estimate))) %>%
+  ungroup() %>%
+  filter(city %in% prov_capitals$city)
+
+comm_matrix_light <- comm_matrix_light %>%
+  mutate(
+    sex = if_else(sex == 1, "male", "female"),
+    travel_reason = if_else(travel_reason == 1, "study", "work"),
+    place_of_destination = case_when(
+      place_of_destination == 1 ~ "same municipality",
+      place_of_destination == 2 ~ "other municipality",
+      TRUE ~ "other country"
+    ),
+    mean_of_transp = case_when(
+      mean_of_transp == "01" ~ "train",
+      mean_of_transp == "02" ~ "tram",
+      mean_of_transp == "03" ~ "subway",
+      mean_of_transp == "04" ~ "urban_bus",
+      mean_of_transp == "05" ~ "extra_urban_bus",
+      mean_of_transp == "06" ~ "school_company_bus",
+      mean_of_transp == "07" ~ "private_car_driver",
+      mean_of_transp == "08" ~ "private_car_passenger",
+      mean_of_transp == "09" ~ "motorbike_scooter",
+      mean_of_transp == "10" ~ "bike",
+      mean_of_transp == "11" ~ "other",
+      TRUE ~ "walk"
+    ),
+    travel_time = case_when(
+      travel_time == 1 ~ "<15",
+      travel_time == 2 ~ "15_30",
+      travel_time == 3 ~ "31_60",
+      TRUE ~ ">60"
+    )) %>%
+  mutate(avg_travel_time = case_when( # Creating a numeric variable with the mean travel time by travel time category
+    travel_time == "<15" ~ 7.5,
+    travel_time == "15_30" ~ (15+30)/2,
+    travel_time == "31_60" ~ (31+60)/2,
+    TRUE ~ 60
+  ))
+# 
+# #saveRDS(comm_matrix_light, here::here("comm_matrix_light.rds"))
+# 
+# # write_csv(comm_matrix_light, "comm_matrix_light.csv")
+# 
+transport_speeds <- read_excel(
+  here("data-raw", "data_raw.xlsx"),
+  sheet = "transport_speeds"
+)
+
+comm_matrix_light <- comm_matrix_light %>%
+  mutate(mode = if_else(str_detect(mean_of_transp, "car"),
+                        "car",
+                        mean_of_transp)) %>%
+  left_join(transport_speeds, by = c("mode" = "mean_of_transp")) %>%
+  mutate(km_one_way = avg_travel_time / 60 * speed_kmh,
+         km_round_trip = km_one_way * 2) %>% # eliminating the difference between car drivers and car passengers
+  select(!c(mean_of_transp)) %>%
+  group_by(code, city, region, province, nuts1, nuts2, nuts3, travel_time,
+           avg_travel_time, speed_kmh, km_one_way, km_round_trip, mode, travel_reason, place_of_destination, sex) %>%
+  summarise(individuals = sum(individuals)) %>%
+  ungroup()
+
+comm_matrix_regression <- comm_matrix_light |>
+  filter(place_of_destination == "same municipality")
+
+saveRDS(comm_matrix_regression, here("data-raw", "comm_matrix_regression.rds"))
+
+comm_matrix_regression <- readRDS(here("data-raw", "comm_matrix_regression.rds"))
+
+```
+
+
+## Introduzione {#sec-intro}
+
+Le città italiane sono caratterizzate da tassi di incidentalità (facenti riferimento sia agli incidenti mortali che a quelli non mortali) sensibilmente più alti di quelli di molte altre città europee, sopratutto di quelle dei paesi dove la mobilità attiva rappresenta un'ampia percentuale degli spostamenti totali (Paesi Bassi, Germania, Danimarca, ecc.), come evidenziato dal rapporto dell'International Transport Forum sulla sicurezza stradale nelle città europee [@internationaltransportforum2019a].
+Inoltre, i rischio di incidenti, mortali e non, è sistematicamente maggiore per pedoni e ciclisti rispetto a chi utilizza i mezzi pubblici o auto e moto private, come da dati ISTAT sugli incidenti avvenuti in Italia [@istat2024].
+L'elevato rischio incidenti per pedoni e ciclisti rischia di annullare gli effetti positivi di un eventuale passaggio dalla mobilità passiva alla mobilità attiva di parte degli spostamenti quotidiani nelle città italiane, nell'ipotesi che tale passaggio non sia in grado - contestualmente - di ridurre i volumi di traffico motorizzato in maniera sufficiente a ridurre anche il rischio incidenti.
+
+## Scopo dell'analisi {#sec-scope}
+
+Nel corso delle attività RDS 2024, viene sviluppato uno scenario di mobilità alternativa per la città di Milano che prevede l'effettuazione di determinate percentuali degli spostamenti giornalieri (suddivisi per lunghezza del percorso) tramite bicicletta o a piedi, invece che con mezzi a motore privati. Lo scenario è arricchito anche dalla realizzazione di zone 30 e di nuove infrastrutture ciclabili.
+L'obiettivo è quello di valutare gli effetti sull'inquinamento, la congestione stradale e la salute di tale scenario.
+Il passaggio da una mobilità di tipo passivo a una di tipo attivo genera benefici per la salute grazie alla maggiore attività fisica (anche se possono essere parzialmente erosi dalla maggior inalazione di inquinanti), ma con la grande incognita del rischio incidenti che in alcune città è così elevato da azzerare completamente i benefici dovuti dalla maggior attività fisica. Questo nell'ipotesi che il rischio incidenti non cambi nello scenario alternativo, un'ipotesi forte.
+
+Per poter meglio stimare gli effetti sulla salute, quindi, è necessario stimare il rischio incidenti anche nello scenario alternativo ovverosia con l'istituzione delle zone 30 e la costruzione di nuove piste ciclabili, oltre con una determinata riduzione del traffico motorizzato.
+Una strategia potrebbe essere quella di utilizzare i tassi di incidentalità di città contraddistinte da un'estensione dell infrastrutture ciclabili (per popolazione residente) e di percentuale di traffico motorizzato sul totale, simili a quelli della città di Milano nello scenario alternativo.
+È quindi necessario individuare la relazione causale tra rischio incidenti di ciclisti e pedoni e alcune variabili che possono influenzare questo rischio.
+
+Da un'analisi della letteratura [@adminaite-fodor2020; @europeancommission2022; @internationaltransportforum2019a; @castro2018] è emerso che i *driver* del rischio incidenti in ambito urbano per i ciclisti possono essere riassunti nelle seguenti variabili:
+
+- Densità di popolazione (maggior congestione del traffico, minori velocità medie, maggior percentuale di persone che usa i mezzi pubblici).
+- Estensione dell'infrastruttura ciclabile.
+- Volume di traffico motorizzato sul totale.
+- Presenza di aree con limiti di velocità a 30 km/h (soglia oltre la quale le conseguenze di un impatto con un veicolo a motore, per ciclisti e pedoni, sono prevalentemente mortali).
+- Stato delle infrastrutture stradali (es. asfalto).
+- Utilizzo del casco.
+- Età del ciclista.
+
+È stato possibile reperire dati solamente per le prime tre variabili (l'età del ciclista è stata considerata stimando regressioni per classe di età), non esistendo una banca dati delle "Zone 30" italiane. I dati di densità di popolazione ed estensione delle ciclabili provengono dalla banca dati dell'Istat [@istat2024a] e, nel secondo caso, anche da @magliulo2022, mentre il dato riguardante i volumi di traffico motorizzato sul totale sono stati calcolati sulla base della matrice le pendolarismo Istat [@istat2014]. Il volume di traffico, in questa sede, è definito, per ciascuna modalità di trasporto, come la somma delle percorrenze totali giornaliere (in km) moltiplicata per il numero di individui che - secondo la matrice del pendolarismo - dichiarano di utilizzare un determinato mezzo di locomozione per i propri spostamenti quotidiani.
+
+## Analisi statistica {#sec-stat-analysis}
+
+L'obiettivo è quello di quantificare la relazione causale - individuata dalla letteratura - tra tasso di incidentalità e alcune variabili esplicative: densità di popolazione, estensione delle ciclabili per unità di popolazione e volume di traffico motorizzato sul totale. Ogni capoluogo di provincia rappresenta un'osservazione.
+Sono state anche aggiunte delle variabili *dummy* corrispondenti alle varie aree geografiche di appartenenza (Nord-Ovest, Nord-Est, Centro, Sud e Isole) in modo da rappresentare eventuali differenze di carattere geografico e sociale.
+Sono state stimate cinque versioni di questa relazione, una per ogni classe di età.
+
+Poiché la relazione tra tasso di incidentalità e le variabili indipendenti è molto probabilmente non-lineare, le varie versioni del modello vengono stimate a valle di una trasformazione logaritmica delle variabili stesse. 
+La @fig-variable-distributions e la @fig-variable-distributions-logs mostrano la distribuzione delle variabili prima e dopo la trasformazione logaritmica.
+
+```{r}
+#| label: fig-variable-distributions
+#| fig-cap: "Distribuzione delle variabili utilizzate (livelli)"
+
+
+
+# computing population density
+
+# Downloading municipality areas
+
+pop_tot <- pop_latest |>
+  group_by(city) |>
+  summarise(pop = sum(pop, na.rm = T)) |>
+  ungroup()
+
+pop_density <- read_excel(
+  here("data-raw", "sup_comuni_prov.xlsx"),
+  sheet = 2
+) |>
+  select(city = `Denominazione Comune`, km2 = 6) |>
+  filter(city %in% pop_tot$city) |>
+  left_join(pop_tot)  |>
+  mutate(pop_density = pop/km2)
+
+private_motor_vehicles <- c("car", "motorbike_scooter")
+
+motor_vehicles <- c(private_motor_vehicles, "extra_urban_bus", "school_company_bus", "urban_bus")
+
+motor_traffic_volumes <- comm_matrix_regression |>
+  group_by(city, mode) |>
+  summarise(traffic_volume = sum(individuals * km_round_trip)) |>
+  group_by(city) |>
+  mutate(volume_share = traffic_volume / sum(traffic_volume) * 100) |>
+  ungroup() |>
+  filter(mode %in% motor_vehicles) |>
+  group_by(city) |>
+  summarise(motor_volume_share = sum(volume_share)) |>
+  ungroup()
+
+bike_paths <- read_excel(
+  here("data-raw", "bike_paths.xlsx")
+) |>
+  select(city, bike_paths_km) 
+
+bike_paths <- pop_density[, c("city", "pop", "pop_density")] |> 
+  left_join(bike_paths) |>
+  mutate(bike_paths_pop = bike_paths_km / pop * 10000)
+
+inj_rates <- actranspr2::road_inj_rate |>
+  filter(mode == "bike")  |>
+  left_join(bike_paths) |>
+  group_by(city, age_class, bike_paths_pop) |>
+  summarise(road_inj_rate = sum(road_inj_rate, na.rm = T) * 100000) |> # infortuni ogni 100 mila km
+  ungroup()
+
+# Regression analysis to predit road accident rates
+
+regression_variables <- bike_paths |>
+  left_join(motor_traffic_volumes) |> 
+  left_join(inj_rates) |> 
+  mutate(bike_paths_km = NULL, pop = NULL)
+
+# Adding NUTS1 regions
+
+nuts1 <- regional_capitals |> 
+  select(city = prov_capital, nuts1 = geo) |> 
+  unique()
+
+regression_variables <- regression_variables |> 
+  left_join(nuts1)
+
+# Variable distributions
+
+# regression_variables |> 
+#   select(!age_class) |> 
+#   unique() |> 
+#   pivot_longer(
+#     !city,
+#     names_to = "var",
+#     values_to = "value"
+#   ) |> 
+#   ggplot(aes(x = value)) +
+#   geom_histogram(aes(y = ..density..),
+#                  color = "grey30",
+#                  fill = "white") +
+#   geom_density(alpha = 0, color = "tomato") +
+#   facet_wrap(~ var, scales = "free") +
+#   theme_bw()
+
+
+
+```
+
+La @fig-variable-distributions-logs mostra la distribuzione dei dati dopo la trasformazione logaritmica. 
+
+```{r}
+#| label: fig-variable-distributions-logs
+#| fig-cap: "Distribuzione delle variabili utilizzate (logaritmi)"
+
+# regression_variables_logs <- regression_variables |> 
+#   #select(!age_class) |> 
+#   unique() |> 
+#   pivot_longer(
+#     !c(city, age_class),
+#     names_to = "var",
+#     values_to = "value"
+#   ) |> 
+#   mutate(value = log(value + 1)) 
+# 
+# 
+# regression_variables_logs |> 
+#   ggplot(aes(x = value)) +
+#   geom_histogram(aes(y = ..density..),
+#                  color = "grey30",
+#                  fill = "white") +
+#   geom_density(alpha = 0, color = "darkgreen") +
+#   facet_wrap(~ var, scales = "free") +
+#   theme_bw()
+
+```
+
+La @fig-scatter-plots mostra infine le linee di regressione tra la variabile dipendente (tasso di incidentalità) e ciascuna delle variabili indipendenti separatamente. Tutte e tre le variabili sembrano almeno parzialmente correlate con la variabile dipendente, per tutte le classi di età considerate. La classe di età che mostra la correlazione minore è quella tra 65 e 120 anni, in quanto, al di sopra di una certa età, è più probabile che, tra le cause di un incidente, possa esserci anche la scarsa prestanza fisica dei soggetti coinvolti.
+Osservando il grafico salta all'occhio un potenziale problema che andrà risolto in fase di stima vera e propria e vale a dire che le linee di regressione in alcuni casi assumono valori negativi, mentre il tasso di incidentalità è positivo per definizione.
+
+```{r}
+#| label: fig-scatter-plots
+#| fig-cap: "Relazioni biunivoche tra la variabile dipendente e ciascuno dei regressori"
+
+regression_variables <- 
+  regression_variables |> 
+  # trasformo tutte le variabili qualitative in categoriche
+  mutate_if(is.character, as.factor)
+
+regression_variables_tidy <-
+  regression_variables |> 
+  unique() |> 
+  pivot_longer(
+    !c(city, age_class, road_inj_rate, nuts1),
+    names_to = "var",
+    values_to = "value"
+  )
+
+age_class_pal <- viridis::viridis(n = length(unique(regression_variables_tidy$age_class)),
+                         option = "viridis")
+
+regression_variables_tidy |> 
+  ggplot(
+    aes(
+      x = value,
+      y = road_inj_rate,
+      group = age_class,
+      colour = age_class
+    )
+  ) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_manual(values = age_class_pal) +
+  facet_wrap(~ var, scales = "free_x") +
+  theme_bw() +
+  theme(legend.position = "top")
+
+#info sui modelli TOBIT
+
+# https://www.rpubs.com/Zahidasghar/Tobit_Model
+# https://rpubs.com/DragonflyStats/introduction_to_tobit_regression
+# https://cran.r-project.org/web/packages/AER/AER.pdf
+# https://www.econometrics-with-r.org/
+#
+
+```
+
+## Data splitting
+
+Per la scelta del modello può essere utile dividere in modello in due parti: un *training set* e un *testing set*. Il *training set* è un gruppo di osservazioni più numeroso e viene usato per individuare il modello che meglio descrive i dati, mentre il *testing set* è un set ristretto di osservazioni che viene utilizzato per valutare le performance del modello intermini di abilità predittive (*forecasting*).
+
+```{r}
+#| label: resampling
+
+
+# trasformo la variabile dipendente in oggetto Surv, in modo da poter applicare la survival regression
+#vedi ?survreg
+
+regression_variables <- 
+  regression_variables |> 
+  mutate(road_inj_rate_surv = Surv(road_inj_rate, road_inj_rate > 0, type = "left"))
+
+set.seed(222)
+
+# inserisco i 3/4 dei dati nel training set
+
+split_prop <- 3/4
+
+data_split <- initial_split(regression_variables, prop = split_prop)
+
+# creo due separati dataframe per i due dataset
+
+train_data <- training(data_split)
+
+test_data <- testing(data_split)
+
+
+```
+
+Densità di popolazione, ciclabili e percentuale di traffico a motore sono variabili che possono avere un effetto sul tasso di incidentalità, come evidenziato dalla @fig-scatter-plots, così come la classe di età e la localizzazione geografica (intesa come macro-area) che potrebbe comprendere fattori sociali e culturali. A priori, tuttavia, non possiamo sapere se tutte le variabili hanno un impatto significativamente diverso da zero sulla variabile dipendente e per questo è necessario testare diverse versioni del modello stesso.
+
+```{r}
+#| label: model-recipe
+
+#Creo la ricetta del modello
+
+inj_rate_rec <- 
+  recipe(road_inj_rate_surv ~ ., data = train_data) |> # versione base del modello: ci sono tutte le variabili
+  update_role(city, new_role = "ID") |> # variabile città esclusa dalla stima, è trattata come ID
+  update_role(road_inj_rate, new_role = "ID") |> 
+  step_dummy(all_nominal_predictors()) |> # crea dummy al posto delle variabili categoriche
+  step_zv(all_predictors()) # rimuove tutte le variabili che hanno solo un'osservazione nel training set
+  
+inj_rate_rec |> 
+  summary() |> 
+  gt::gt()
+
+```
+
+Nella prima stima del modello vengono utilizzate tutte le variabili.
+
+```{r}
+#| label: tbl-model-fit
+#| tbl-cap: "Modello Tobit - Training set"
+
+# https://www.tidymodels.org/start/recipes/
+# https://stackoverflow.com/questions/15865222/predict-with-survreg-tobit-goes-past-bound
+# https://www.tidymodels.org/learn/statistics/survival-case-study/
+
+# definisco il modello da usare
+tobit_mod <- 
+  survival_reg(dist = "gaussian") |> # necessario definire la distribuzione per stimare il modello tobit
+  set_engine("survival")
+
+# definisco il workflow
+
+library(censored)
+
+road_inj_wflow <- 
+  workflow() %>% 
+  add_model(tobit_mod) %>% 
+  add_recipe(inj_rate_rec)
+
+# stimo il modello completo
+
+road_inj_fit <- 
+  road_inj_wflow |> 
+  fit(data = train_data)
+
+# preparo una tabella con i risultati
+
+library(gt)
+
+road_inj_fit |>  
+  extract_fit_parsnip() |> 
+  tidy() |> 
+  gt::gt() |> 
+  gt::fmt_number(
+    columns = is.numeric,
+    decimals = 3
+  ) |> 
+  gt::tab_style(
+    style = gt::cell_text(weight = "bold"),
+    locations = gt::cells_column_labels()
+        )
+
+```
+
+Come è possibile osservare nella @tbl-model-fit, il tasso di incidenti è correlato positivamente con la percentuale di traffico a motore sul totale degli spostamenti e negativamente con l'estensione delle piste ciclabili. La densità di popolazione sembra non avere nessun effetto. Come è lecito attendersi *a priori*, le classi di età più alte (55-64 e 65-120) sono caratterizzate da tassi di incidentalità più elevati rispetto alle altre, come evidenziato dalle rispettive *dummy* (variabile di raffronto classe 18-30). La macro-area geografica sembra avere solamente un effetto marginale, con la sola *dummy* riferita al Sud Italia debolmente significativa.
+Possiamo ora usare il resto delle osservazioni per testare la bontà predittiva del modello.
+
+```{r}
+#| label: tbl-testing-model
+
+
+# modulo per forecasting
+
+road_inj_predict <- 
+  predict(road_inj_fit, test_data)
+
+test_data |> 
+  bind_cols(road_inj_predict) |> 
+  ggplot(
+    aes(
+      x = road_inj_rate,
+      y = .pred_time
+    )
+  ) +
+  geom_point() +
+  geom_abline(slope = 0.5, intercept = 0)
+  
+
+
+
+```
+
+
+
+
+
+
+
+
+
+# Regressione lieare semplice (OLS) e modello Tobit
+
+Nel modello lineare (*Ordinary Least Squares*) del tipo:
+
+$$
+Y_i = \alpha + \beta X_i + \epsilon_i
+$$ {#eq-ols}
+
+il coefficiente $\beta$ rappresenta la variazione della variabile dipendente $Y$ data una variazione unitaria della variabile indipendente $X$. Quando vengono utilizzate, in entrambi i lati dell'equazione, i logaritmi delle variabili, il coefficiente $\beta$ può essere interpretato come la variazione percentuale di $Y$ a fronte della variazione di $X$ dell'1%.
+
+Questo tipo di modelli si presta solo parzialmente alla nostra analisi in quanto la variabile dipendente (tasso di incidentalità) è sempre maggiore o uguale a zero. In questo caso è infatti preferibile un modello *tobit*. Il modello tobit prende il suo nome dal James Tobin [@tobin1958] che lo sviluppò per descrivere la relazione tra una variabile dipendente non negativa $Y_i$ e una (o più) variabile indipendente $x_i$. Il modello *tobit* è concettualmente simile al modello *probit*, che viene usato nel caso di variabili dipendenti binarie.
+
+Se la variabile dipendente è troncata (in questo caso a zero) per una percentuale significativa delle osservazioni, le stime dei parametri ottenuti con il metodo dei minimi quadrati sono distorte (*biased*)  [@henningsen2010]. Stime consistenti possono essere ottenuti con il modello *tobit*.
+
+Il modello ipotizza che una variabile latente e non osservabile $y_{i}^{*}$ dipenda linearmente da $x_i$ tramite un vettore di parametri $\beta$ e da un termine di errore distribuito normalmente $u_i$, in maniera analoga al modello lineare OLS.
+La variabile osservabile (nel nostro caso il tasso di incidentalità) $y_i$ è ipotizzata uguale alla variabile latente $y_{i}^{*}$ quando quest'ultima è maggiore di zero e zero in tutti gli altri casi:
+
+$$
+\begin{equation}
+y_{i} =
+    \begin{cases}
+      y_{i}^{*} \quad \text{se} \quad y_{i}^{*} > 0 \\
+      0 \quad \text{se} \quad y_{i}^{*} \leq 0 \\
+    \end{cases}
+\end{equation}
+$$ {#eq-tobit-model}
+
+Dove $y_{i}^{*}$ è la variabile latente:
+
+$$
+y_{i}^{*} = \beta x_i + u_i, \quad u_i \sim N(0, \sigma^2)
+$$ {#eq-latent-tobit}
+
+Il modello *tobit* viene anche chiamato *censored regression model*, cioè un modello di regressione lineare nel quale tutti i valori negativi (nel nostro caso) vengono posti uguali a zero. In altre parole, le osservazioni vengono censurate a zero.
+Il modello, quindi, descrive due cose. La prima è la probabilità che $y_i = 0$ dato $x_i$, che in termini matematici può essere espressa come:
+
+$$
+P \{ y_i = 0\} = P \{ y_{i}^{*} \leq 0 \} = P \{ \epsilon_i \leq -x_{i}^{'} \beta\} = P \biggl\{ \frac{\epsilon_i}{\sigma} \leq \; -\frac{x_{i}^{'} \beta}{\sigma} \biggr\} = \Phi \bigg(-\frac{x_{i}^{'} \beta}{\sigma} \bigg) = 1 - \Phi \bigg(\frac{x_{i}^{'} \beta}{\sigma} \bigg)
+$$ {#eq-first-thing-tobit}
+
+La seconda è invece la distribuzione di $y_i$ quando è positiva, che altro non è che una distribuzione normale troncata con valore atteso:
+
+$$
+E\{ y_i|yi >0\} = x_{i}^{'} \beta + E\{ \epsilon_i|\epsilon_i > -x_{i}^{'} \beta\} = x_{i}^{'} \beta + \sigma \frac{\phi(x_{i}^{'} \beta/\sigma)}{\Phi(x_{i}^{'} \beta)}
+$$ {#eq-second-thing-tobit}
+
+L'ultimo termine della @eq-second-thing-tobit è il valore atteso di una variabile distribuita normalmente con media zero che sia più grande di $-x_i\beta$ e tale valore atteso è sempre maggiore di zero. L'@eq-second-thing-tobit mostra cosa sarebbe inappropriato utilizzare solo le osservazioni positive e stimare un modello di regressione lineare solo su di esse. Infatti, il valore atteso condizionale di $y_i$ non è più uguale a $x_{i}{'}\beta$ ma dipende anche, non linearmente, da $x_i$ tramite $\frac{\phi(x_{i}^{'} \beta/\sigma)}{\Phi(x_{i}^{'} \beta)}$.
+
+I coefficienti del modello *tobit* possono essere interpretati in molti modi, a seconda delle esigenze. Ad esempio, la probabilità che $y_i = 0$ è data da:
+
+$$
+P\{ y_i = 0\} = 1 - \Phi(x_{i}^{'}\beta / \sigma)
+$$ {#eq-probit-zero-exp}
+
+nel quale $\beta / \sigma$ è l'effetto marginale di una variazione di $x_{ik}$ data la probabilità di osservare un valore nullo, cioè:
+
+$$
+\frac{\delta P\{ y_i = 0\}}{\delta x_{ik}} = -\Phi(x_{i}^{'}/\sigma)\frac{b_k}{\sigma}
+$$ {#eq-exp-value-zero}
+
+Il modello *tobit* descrive anche il valore atteso di $y_i$ quando questo è positivo, ovverosia l'effetto marginale di una variazione in $x_{ik}$ sul valore di $y_i$ dato il troncamento. In altre parole, tale effetto è diverso da $\beta_k$, cioè il coefficiente della regressione lineare. L'effetto marginale di una variazione di $x_{ik}$ sul valore atteso di $y_i$ è dato da:
+
+$$
+\frac{E\{ y_i\}}{\delta x_{ik}} = \beta_k \Phi(x_{i}^{'}\beta / \sigma)
+$$ {#eq-exp-value-positive}
+
+L'@eq-exp-value-positive ci dice che l'effetto marginale di una variazione in $x_{ik}$ su $y_i$ è dato dal coefficiente $\beta_k$ moltiplicato per la probabilità di avere un outcome positivo. Se la probabilità è 1, allora l'effetto marginale è $\beta_k$, come per il modello lineare.
+
+La stima del modello *tobit* avviene normalmente con il metodo della massima verosimiglianza. Ipotizzando che il termine di errore $\epsilon$ sia distribuito normalmente con media $\0$ e varianza $\sigma^2$ la funzione di log-verosimiglianza è <!-- https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1 !-->
+
+```{r}
+#| tobit-estimation
+
+
+
+```
+
+
+
+
+
+
+
+## Modelli Bayesiani
+
+```{r}
+# https://biostat.app.vumc.org/wiki/pub/Main/StatisticalComputingSeries/bayes_reg_rstanarm.html
+
+# https://learningstatisticswithr.com/book/bayes.html
+
+# https://towardsdatascience.com/probability-concepts-explained-bayesian-inference-for-parameter-estimation-90e8930e5348
+```
+
+
+
+
+
+
+Prime stime
+
+```{r}
+
+# aggiungo le dummy
+
+# https://cran.r-project.org/web/packages/fastDummies/vignettes/making-dummy-variables.html
+
+# gestire modelli in R https://r4ds.had.co.nz/many-models.html
+
+# incremental validity https://rforhr.com/incrementalvalidity.html
+
+# Il pacchetto lessR contiene set di test ipotesi standard OLS
+
+geo <- bike_paths <- read_excel(
+  here("data-raw", "bike_paths.xlsx")
+) |>
+  select(city, geo) 
+
+regression_variables_logs <- regression_variables_logs |> 
+  left_join(geo) |> 
+  fastDummies::dummy_cols(select_columns = "geo", remove_first_dummy = TRUE)
+
+regression_variables_nested <- regression_variables_logs |> 
+  pivot_wider(names_from = var, values_from = value) |> 
+  group_by(age_class) |> 
+  nest()
+
+regression_variables_unnested <- regression_variables_nested |> 
+  unnest(data) |> 
+  ungroup()
+
+prova <- lm(road_inj_rate  ~ bike_paths_pop + motor_volume_share + pop_density +
+              `geo_North-East` +`geo_North-West` + `geo_South`, data = regression_variables_unnested)
+
+prova_tobit <- map(
+  regression_variables_nested$age_class,
+  \(x){
+    
+    summary(AER::tobit(road_inj_rate  ~ bike_paths_pop + motor_volume_share + pop_density +
+              `geo_North-East` +`geo_North-West` + `geo_South`, 
+              data = filter(regression_variables_unnested, age_class == x))
+            )
+  }
+) |> set_names(regression_variables_nested$age_class)
+
+prova_tobit <- AER::tobit(
+  road_inj_rate  ~ bike_paths_pop + motor_volume_share + pop_density +
+              `geo_North-East` +`geo_North-West` + `geo_South`, data = regression_variables_unnested
+)
+
+model_results_non_fatal <- regression_variables_nested |>
+  mutate(ols1 = map(data, \(x) lm(road_inj_rate  ~ bike_paths_pop, data = x)),
+         ols3 = map(data, \(x) lm(road_inj_rate  ~ bike_paths_pop + motor_volume_share, data = x)),
+         ols4 = map(data, \(x) lm(road_inj_rate  ~ bike_paths_pop + motor_volume_share + pop_density, data = x)),
+         ols5 = map(data, \(x) lm(road_inj_rate  ~ bike_paths_pop + motor_volume_share + pop_density , data = x)),
+         ols6 = map(data, \(x) lm(road_inj_rate  ~ bike_paths_pop + motor_volume_share + pop_density + 
+                                    `geo_North-East` +`geo_North-West` + `geo_South`, data = x))
+         )|>
+  pivot_longer(contains("ols"), names_to = "model", values_to = "estimate") |>
+  mutate(glance = map(estimate, broom::glance)) |>
+  unnest(glance, .drop = TRUE) |>
+  arrange(desc(adj.r.squared))
+
+model_results_non_fatal %>%
+  ggplot(aes(age_class, adj.r.squared, color = model)) +
+  geom_jitter(width = 0.2)
+
+model_results_non_fatal |>
+  mutate(coeffs = map(estimate, broom::tidy)) |>
+  unnest(coeffs, names_sep = "_") |>
+  filter(model == "ols5") |>
+  mutate(vif = map(estimate, \(x) car::vif(x))) |>
+  unnest(vif) |> view()
+```
+
+

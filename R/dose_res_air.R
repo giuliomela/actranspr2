@@ -69,8 +69,8 @@ dose_res_air <- function(city = "Roma",
         w_phy_act = y,
         w_commuting = z,
         experimental_data = F,
-        working_weeks = working_weeks,
-        commuting_days = commuting_days
+        working_weeks = {{working_weeks}},
+        commuting_days = {{commuting_days}}
       )
     }
   )

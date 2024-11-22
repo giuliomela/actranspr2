@@ -68,6 +68,7 @@ inhaled_dose <- function(city = "Roma",
 
   names(vr_fct) <- vr$activity
 
+
   times <- purrr::map(c(w_commuting, 0),
                       function(x) {
                         comm <- x / 7
@@ -101,6 +102,7 @@ inhaled_dose <- function(city = "Roma",
     )
 
   }
+
 
   if(isTRUE(eq_change)){
 

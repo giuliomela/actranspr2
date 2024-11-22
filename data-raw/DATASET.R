@@ -6,6 +6,7 @@ library(xlsx)
 library(readr)
 library(readxl)
 library(rdbnomics)
+library(rsdmx)
 
 pandemic_yr <- 2020 # pandemic year (to be escluded from some computations)
 
@@ -135,7 +136,8 @@ demo_data <- demo_data %>%
   nest() %>%
   left_join(prov_capitals) %>%
   select(city, data) %>%
-  unnest(data)
+  unnest(data) |>
+  ungroup()
 
 # Manipulating the commuting matrix to extract relevant information
 # although the original matrix distinguishes between male and female commuters, here they are summed up together
@@ -606,8 +608,12 @@ pop_latest <- pop_latest %>%
   ungroup()
 
 
+
+
+
 usethis::use_data(demo_data, comm_matrix_cities_km, road_inj_rate, met_lit, exp_data,
                   air_pollution_ita, vent_rates, codici_comuni_2023, disability_weights,
                   pop_latest, phy_act, mortality_rr, morbidity_rr, regional_capitals,
                   fatal_road_inj_rate, disease_incidence, disease_length, age_classes, road_injuries,
                   overwrite = TRUE, internal = FALSE)
+
