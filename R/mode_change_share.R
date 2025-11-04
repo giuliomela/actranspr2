@@ -19,8 +19,8 @@ mode_change_share <- function(km_one_way,
      (share.less_3km | share.3_10km | share.10_15km | share.more_15km) < 0)
     stop("The 'share' parameters must all be between 0 and 1")
 
-  if(sum(share.less_3km, share.3_10km, share.10_15km, share.more_15km) > 1)
-    stop("The sum of commuter shares must be lower or equal to one")
+  # if(sum(share.less_3km, share.3_10km, share.10_15km, share.more_15km) > 1)
+  #   stop("The sum of commuter shares must be lower or equal to one")
 
   share <- dplyr::case_when(
     km_one_way < 3 ~ share.less_3km,

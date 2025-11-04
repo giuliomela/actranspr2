@@ -50,6 +50,7 @@ scenario <- function(city = "Roma",
 
 
 
+
   scenario[[paste0(mode_to, "_weekly_travel_time")]] <- scenario$km_round_trip / scenario$speed_kmh *
     commuting_days
 
